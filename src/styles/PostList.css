@@ -1,0 +1,16 @@
+/* PostList.css */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.post-list .post-item {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .post-list {
+    padding: 10px;
+  }
+}

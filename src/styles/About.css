@@ -1,0 +1,64 @@
+.about {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 3px;
+  background: #ff5959;
+  margin: 10px auto 0;
+}
+
+.inverted {
+  background-color: #333;
+  color: #fff;
+}
+
+.inverted h2::after {
+  background: #ff0d6e;
+}
+
+.section:nth-of-type(even) {
+  background-color: #f4f4f4;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+.section.inverted:nth-of-type(even) {
+  background-color: #333;
+}
+
+.section.inverted:nth-of-type(odd) {
+  background-color: #444;
+}
+
+.section:nth-of-type(2) .section-content {
+  color: #fff; 
+}
